@@ -8,6 +8,8 @@ import com.umfrancisco.model.User;
 
 @Repository
 public interface PostRepository extends JpaRepository<Post, Long> {
+	Optional<Post> findById(long id);
 	Optional<Post> findByTitle(String title);
 	Optional<Post> findByUser(User user);
+	boolean existsByTitle(String title);
 }

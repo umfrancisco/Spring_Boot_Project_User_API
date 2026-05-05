@@ -13,10 +13,9 @@ import jakarta.validation.constraints.Size;
 @Entity
 @Table(name = "posts")
 public class Post {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long postId;
+	private long id;
 	@NotBlank(message = "Title is required")
 	@Size(min = 3, max = 50, message = "Title must be between 3 and 50 characters")
     @Column(nullable = false, length = 50)
@@ -32,21 +31,21 @@ public class Post {
 		
 	}
 	
-	public Post(long postId,
+	public Post(long id,
 			@NotBlank(message = "Title is required") @Size(min = 3, max = 50, message = "Title must be between 3 and 50 characters") String title,
 			@NotBlank(message = "Text is required") @Size(min = 5, max = 150, message = "Text must be between 5 and 150 characters") String text,
 			User user) {
-		this.postId = postId;
+		this.id = id;
 		this.title = title;
 		this.text = text;
 		this.user = user;
 	}
 	
-	public long getPostId() {
-		return postId;
+	public long getId() {
+		return id;
 	}
-	public void setPostId(long postId) {
-		this.postId = postId;
+	public void setId(long id) {
+		this.id = id;
 	}
 	public String getTitle() {
 		return title;
@@ -69,6 +68,6 @@ public class Post {
 	
 	@Override
 	public String toString() {
-		return "Post [postId=" + postId + ", title=" + title + ", text=" + text + ", user=" + user + "]";
+		return "Post [id=" + id + ", title=" + title + ", text=" + text + ", user=" + user + "]";
 	}
 }

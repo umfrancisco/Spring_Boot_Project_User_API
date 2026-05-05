@@ -9,7 +9,6 @@ import com.umfrancisco.exception.DuplicateResourceException;
 import com.umfrancisco.exception.ResourceNotFoundException;
 import com.umfrancisco.model.User;
 import com.umfrancisco.repository.UserRepository;
-
 import java.util.List;
 
 @Service
