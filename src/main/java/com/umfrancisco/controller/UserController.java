@@ -1,7 +1,7 @@
-package com.example.userapi.controller;
+package com.umfrancisco.controller;
 
-import com.example.userapi.model.User;
-import com.example.userapi.service.UserService;
+import com.umfrancisco.model.User;
+import com.umfrancisco.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

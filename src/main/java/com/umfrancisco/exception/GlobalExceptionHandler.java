@@ -1,4 +1,4 @@
-package com.example.userapi.exception;
+package com.umfrancisco.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

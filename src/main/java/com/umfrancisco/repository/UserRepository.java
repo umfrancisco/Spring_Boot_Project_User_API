@@ -1,6 +1,6 @@
-package com.example.userapi.repository;
+package com.umfrancisco.repository;
 
-import com.example.userapi.model.User;
+import com.umfrancisco.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;

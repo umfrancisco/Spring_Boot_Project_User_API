@@ -1,4 +1,4 @@
-package com.example.userapi.model;
+package com.umfrancisco.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;

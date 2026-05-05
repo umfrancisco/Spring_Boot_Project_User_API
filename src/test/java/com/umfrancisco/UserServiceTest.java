@@ -1,20 +1,18 @@
-package com.example.userapi;
+package com.umfrancisco;
 
-import com.example.userapi.exception.DuplicateResourceException;
-import com.example.userapi.exception.ResourceNotFoundException;
-import com.example.userapi.model.User;
-import com.example.userapi.repository.UserRepository;
-import com.example.userapi.service.UserServiceImpl;
+import com.umfrancisco.exception.DuplicateResourceException;
+import com.umfrancisco.exception.ResourceNotFoundException;
+import com.umfrancisco.model.User;
+import com.umfrancisco.repository.UserRepository;
+import com.umfrancisco.service.UserServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
 import java.util.List;
 import java.util.Optional;
-
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.*;
 

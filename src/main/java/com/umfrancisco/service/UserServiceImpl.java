@@ -1,14 +1,15 @@
-package com.example.userapi.service;
+package com.umfrancisco.service;
 
-import com.example.userapi.controller.UserController;
-import com.example.userapi.exception.DuplicateResourceException;
-import com.example.userapi.exception.ResourceNotFoundException;
-import com.example.userapi.model.User;
-import com.example.userapi.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import com.umfrancisco.controller.UserController;
+import com.umfrancisco.exception.DuplicateResourceException;
+import com.umfrancisco.exception.ResourceNotFoundException;
+import com.umfrancisco.model.User;
+import com.umfrancisco.repository.UserRepository;
+
 import java.util.List;
 
 @Service
