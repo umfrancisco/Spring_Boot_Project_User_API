@@ -31,13 +31,7 @@ class UserServiceTest {
 
     @BeforeEach
     void setUp() {
-        sampleUser = User.builder()
-                .id(1L)
-                .username("johndoe")
-                .email("john@example.com")
-                .city("São Paulo")
-                .country("Brazil")
-                .build();
+    	sampleUser = new User(1L, "johndoe", "john@example.com", "São Paulo", "Brazil");
     }
 
     @Test
