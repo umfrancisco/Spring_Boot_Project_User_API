@@ -17,40 +17,36 @@ This project was initially created using an AI prompt from Claude Code. I reques
    - Spring Boot
 
 <pre>
-├───.settings
-├───src
-│   ├───main
-│   │   ├───java
-│   │   │   └───com
-│   │   │       └───example
-│   │   │           └───userapi
-│   │   │               ├───controller
-│   │   │               ├───exception
-│   │   │               ├───model
-│   │   │               ├───repository
-│   │   │               └───service
-│   │   └───resources
-│   └───test
-│       └───java
-│           └───com
-│               └───example
-│                   └───userapi
-└───target
-    ├───classes
-    │   ├───com
-    │   │   └───example
-    │   │       └───userapi
-    │   │           ├───controller
-    │   │           ├───exception
-    │   │           ├───model
-    │   │           ├───repository
-    │   │           └───service
-    │   └───META-INF
-    │       └───maven
-    │           └───com.example
-    │               └───user-api
-    └───test-classes
-        └───com
-            └───example
-                └───userapi
++---.settings
++---src
+�   +---main
+�   �   +---java
+�   �   �   +---com
+�   �   �       +---umfrancisco
+�   �   �           +---controller
+�   �   �           +---exception
+�   �   �           +---model
+�   �   �           +---repository
+�   �   �           +---service
+�   �   +---resources
+�   +---test
+�       +---java
+�           +---com
+�               +---umfrancisco
++---target
+    +---classes
+    �   +---com
+    �   �   +---umfrancisco
+    �   �       +---controller
+    �   �       +---exception
+    �   �       +---model
+    �   �       +---repository
+    �   �       +---service
+    �   +---META-INF
+    �       +---maven
+    �           +---com.example
+    �               +---user-api
+    +---test-classes
+        +---com
+            +---umfrancisco
 </pre>
