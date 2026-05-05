@@ -21,8 +21,8 @@ public class Post {
     @Column(nullable = false, length = 50)
 	private String title;
 	@NotBlank(message = "Text is required")
-	@Size(min = 5, max = 150, message = "Text must be between 5 and 150 characters")
-    @Column(nullable = false, length = 50)
+	@Size(min = 5, max = 500, message = "Text must be between 5 and 500 characters")
+    @Column(nullable = false, length = 500)
 	private String text;
 	@ManyToOne
 	private User user;
@@ -33,7 +33,7 @@ public class Post {
 	
 	public Post(long id,
 			@NotBlank(message = "Title is required") @Size(min = 3, max = 50, message = "Title must be between 3 and 50 characters") String title,
-			@NotBlank(message = "Text is required") @Size(min = 5, max = 150, message = "Text must be between 5 and 150 characters") String text,
+			@NotBlank(message = "Text is required") @Size(min = 5, max = 500, message = "Text must be between 5 and 500 characters") String text,
 			User user) {
 		this.id = id;
 		this.title = title;
